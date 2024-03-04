@@ -10,8 +10,8 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer components {
+  .headerHover {
+    @apply px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-300
+  }
 }

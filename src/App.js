@@ -1,8 +1,10 @@
+import React from "react";
+import Header from "./commonents/header/Header";
 
 function App() {
   return (
-    <div>
-      hello
+    <div className=" font-bodyFont">
+      <Header/>
     </div>
   );
 }

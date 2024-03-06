@@ -21,7 +21,7 @@ module.exports = {
 
       fontFamily: {
         titleFont: "Roboto",
-        bodyFont: "Poppins",
+        bodyFont: "Arimo",
       },
 
       colors: {

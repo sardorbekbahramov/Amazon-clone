@@ -18,4 +18,13 @@
   .sidebarHover {
     @apply flex items-center justify-between w-full text-sm tracking-wide py-3 px-6 cursor-pointer hover:bg-[#EAEDED] duration-300 text-amazon_blue
   }
+  .footer_link {
+    @apply text-sm tracking-wide hover:text-gray-100 cursor-pointer hover:underline duration-200
+  }
+  .footerBottomTitle {
+    @apply w-24 cursor-pointer font-semibold text-[12px] group-hover:underline text-[#DDD] leading-3 mb-[2px]
+  }
+  .footerBottomText {
+    @apply w-24 cursor-pointer tracking-tight text-[12px] text-[#999] group-hover:underline leading-3
+  }
 }

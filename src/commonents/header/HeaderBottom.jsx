@@ -18,7 +18,7 @@ function HeaderBottom() {
     }, [ref, sideBar]);
 
   return (
-    <div className='w-full flex items-center px-4 h-[36px] bg-amazon_light text-white'>
+    <div className='w-full flex items-center px-4 h-[36px] bg-amazon_light text-white z-50'>
         <div>
             <ul className='flex flex-row items-center tracking-wide'>
                 <li onClick={()=>setSideBar(true)} className='headerHover gap-1'><FaBars /> All</li>

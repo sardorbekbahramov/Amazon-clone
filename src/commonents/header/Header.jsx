@@ -13,7 +13,7 @@ function Header() {
     const [showLan, setShowLan] = useState(false);
 
   return (
-    <div className=' w-full bg-amazon_blue'>
+    <div className=' w-full bg-amazon_blue fixed z-50'>
         {/* Main Header */}
         <div className=' text-white px-4 py-3 flex items-center gap-4'>
             <div className='headerHover'>

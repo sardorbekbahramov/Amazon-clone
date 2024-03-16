@@ -3,12 +3,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import {
-    bannerImgOne,
-    bannerImgTwo,
-    bannerImgThree,
-    bannerImgFive,
-} from "../../assets/index"
+import img1 from '../../assets/img1.jpg';
+import img2 from '../../assets/img2.jpg';
+import img3 from '../../assets/img3.jpg';
+import img4 from '../../assets/img4.jpg';
+
 
 
 function SampleNextArrow(props) {
@@ -37,10 +36,10 @@ const Banner = () => {
     var settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed:1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
@@ -77,20 +76,20 @@ const Banner = () => {
           )
       };
       return (
-        <div className=" w-full mt-[105px]">
+        <div className=" w-full">
             <div className=' w-full h-full relative'>
             <Slider {...settings}>
                 <div>
-                    <img className='w-screen h-[734px] object-cover focus:outline-none' src={bannerImgOne} alt="img" />
+                    <img className=' w-screen h-[734px] object-cover focus:outline-none' src={img1} alt="img" />
                 </div>
                 <div>
-                    <img className='w-screen h-[734px] object-cover focus:outline-none' src={bannerImgTwo} alt="img" />
+                    <img className='w-screen h-[734px] object-cover ' src={img4} alt="img" />
                 </div>
                 <div>
-                    <img className='w-screen h-[734px] object-cover focus:outline-none' src={bannerImgThree} alt="img" />
+                    <img className='w-screen h-[734px] object-cover focus:outline-none' src={img2} alt="img" />
                 </div>
                 <div>
-                    <img className='w-screen h-[734px] object-cover focus:outline-none' src={bannerImgFive} alt="img" />
+                    <img className='w-screen h-[734px] object-cover focus:outline-none' src={img3} alt="img" />
                 </div>
             </Slider>
             </div>
